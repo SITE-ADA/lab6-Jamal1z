@@ -4,6 +4,7 @@ import az.edu.ada.wm2.lab6.model.Category;
 import az.edu.ada.wm2.lab6.model.Product;
 import az.edu.ada.wm2.lab6.model.dto.ProductResponseDto;
 import az.edu.ada.wm2.lab6.model.mapper.ProductMapper;
+import az.edu.ada.wm2.lab6.Lab6Application;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,7 +13,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+@SpringBootTest(classes = Lab6Application.class)
 class ProductMapperTest {
 
     @Autowired
